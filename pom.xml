@@ -19,6 +19,12 @@
             <version>${jukito.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.autofixture</groupId>
+            <artifactId>AutoFixtureGenerator</artifactId>
+            <version>0.6.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>

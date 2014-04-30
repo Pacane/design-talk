@@ -6,6 +6,8 @@ public class PaieServiceTest {
     public void testEnvoyerMessagePaie() throws Exception {
         PaieService service = new PaieService();
 
-        service.envoyerMessagePaie("monCourriel@gmail.com", 100);
+        service.envoyerMessagePaie("courriel@gmail.com", "Joel", "Trottier-Hebert", 200);
+
+        // Comment tester? Quoi tester?
     }
 }
