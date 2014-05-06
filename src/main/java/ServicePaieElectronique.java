@@ -1,7 +1,14 @@
 class ServicePaieElectronique {
+
+    private final CalculateurPaie calculateurPaie;
+    private final ServiceCourriel serviceCourriel;
+
+    ServicePaieElectronique(CalculateurPaie calculateurPaie, ServiceCourriel serviceCourriel) {
+        this.calculateurPaie = calculateurPaie;
+        this.serviceCourriel = serviceCourriel;
+    }
+
     public void envoyerMessagePaie() {
-        CalculateurPaie calculateurPaie = new CalculateurPaie();
-        ServiceCourriel serviceCourriel = new ServiceCourriel();
         Utilisateur utilisateur = ApplicationContext.obtenirUtilisateurConnecte();
 
         int montant = calculateurPaie.calculerPaie(utilisateur);
