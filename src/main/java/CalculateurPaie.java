@@ -1,5 +1,7 @@
+import java.util.Random;
+
 class CalculateurPaie {
     int calculerPaie(Utilisateur utilisateur) {
-        return 100;
+        return new Random().nextInt();
     }
 }

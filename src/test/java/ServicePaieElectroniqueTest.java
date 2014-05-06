@@ -4,13 +4,13 @@ public class ServicePaieElectroniqueTest {
 
     @Test
     public void testEnvoyerMessagePaie() throws Exception {
-        // Dépendances explicites
-        CalculateurPaie calculateurPaie = new CalculateurPaie();
+
+        CalculateurPaie calculateurPaie = new FakeCalculateurPaie();
         ServiceCourriel serviceCourriel = new ServiceCourriel();
         ServicePaieElectronique service = new ServicePaieElectronique(calculateurPaie, serviceCourriel);
 
         service.envoyerMessagePaie();
 
-        // On test quoi?
+        // Résultat attendu? Déterministe!
     }
 }
