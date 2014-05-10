@@ -3,7 +3,7 @@ design-talk
 Ordre de présentation:
 Slides
 Exemples de code
-- v1
-- v2
-- fake
-- v3
+- v1 - Dépendances inline
+- v2 - Dépendances injectée - mais reste global
+- fake - Calculateur modifié, mais fake avec implémentation simple
+- v3 - 
