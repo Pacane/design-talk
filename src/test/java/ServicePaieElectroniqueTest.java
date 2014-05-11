@@ -31,19 +31,4 @@ public class ServicePaieElectroniqueTest {
 
         // Assert
     }
-
-    @Test
-    public void testEnvoyerMessagePaieAutofixture() {
-        ApplicationContext context = mock(ApplicationContext.class);
-        final Utilisateur bob = new Utilisateur();
-        bob.email = "...";
-        given(context.obtenirUtilisateurConnecte()).willReturn(bob);
-        CalculateurPaie calculateurPaie = new FakeCalculateurPaie();
-        ServiceCourriel serviceCourriel = new FakeServiceCourriel();
-        ServicePaieElectronique service = new ServicePaieElectronique(calculateurPaie, serviceCourriel, context);
-
-        service.envoyerMessagePaie();
-
-        // Assert
-    }
 }
