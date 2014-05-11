@@ -1,6 +1,6 @@
-public class FakeCalculateurPaie extends CalculateurPaie {
+public class FakeCalculateurPaie implements CalculateurPaie {
     @Override
-    int calculerPaie(Utilisateur utilisateur) {
+    public int calculerPaie(Utilisateur utilisateur) {
         return 100;
     }
 }
