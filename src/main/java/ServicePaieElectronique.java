@@ -1,9 +1,11 @@
-class ServicePaieElectronique {
+import javax.inject.Inject;
 
+class ServicePaieElectronique {
     private final CalculateurPaie calculateurPaie;
     private final ServiceCourriel serviceCourriel;
     private final ApplicationContext applicationContext;
 
+    @Inject
     ServicePaieElectronique(
             CalculateurPaie calculateurPaie,
             ServiceCourriel serviceCourriel,
