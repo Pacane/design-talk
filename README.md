@@ -6,4 +6,4 @@ Exemples de code
 - v1 - Dépendances inline
 - v2 - Dépendances injectée - mais reste global
 - fake - Calculateur modifié, mais fake avec implémentation simple
-- v3 - 
+- stub-contexte - Contexte applicatif stubbé + exemples tests avec frameworks
